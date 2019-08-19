@@ -4,9 +4,12 @@ import path from "path";
 import caller from "caller";
 
 
-export function file(filePath) {
+export function file(filePath, options = {}) {
   const absolutePath = resolve(filePath, caller());
-  return fs.readFileSync(absolutePath, { encoding: "utf-8" });
+  return fs.readFileSync(absolutePath, {
+    encoding: "utf-8",
+    ...options,
+  });
 }
 
 export default file;
