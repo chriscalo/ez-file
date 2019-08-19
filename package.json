@@ -1,5 +1,5 @@
 {
-  "name": "file",
+  "name": "@chriscalo/file",
   "version": "0.0.1",
   "description": "No fuss utility for fetching the contents of a file.",
   "main": "dist/index.js",
@@ -15,7 +15,8 @@
     "build:watch": "microbundle watch --target=node --format=es,cjs"
   },
   "dependencies": {
-    "caller": "^1.0.1"
+    "caller": "^1.0.1",
+    "js-yaml": "^3.13.1"
   },
   "devDependencies": {
     "ava": "^2.3.0",
