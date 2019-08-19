@@ -4,7 +4,7 @@ No fuss utility for fetching the contents of a file.
 Example:
 
 ``` js
-const file = require("@chriscalo/file");
+const { file } = require("@chriscalo/file");
 
 const contents = file("./relative/path/to/file.txt");
 ```
