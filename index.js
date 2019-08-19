@@ -4,18 +4,9 @@ import path from "path";
 import caller from "caller";
 
 
-// FIXME: include all three cases:
-// 1. absolute path (starts with /) => use as is
-// 2. relative path (starts with ./ or ../) => use path.resolve()
-// 3. module path: use require.resolve()
 export function file(filePath) {
-  if (path.isAbsolute(filePath)) {
-    return fs.readFileSync(filePath, { encoding: "utf-8" });
-  } else {
-    const dirname = path.dirname(caller());
-    const absolutePath = path.join(dirname, filePath);
-    return fs.readFileSync(absolutePath, { encoding: "utf-8" });
-  }
+  const absolutePath = resolve(filePath, caller());
+  return fs.readFileSync(absolutePath, { encoding: "utf-8" });
 }
 
 export default file;
@@ -24,7 +15,11 @@ export default file;
 // 1. absolute path (starts with /) => use as is
 // 2. relative path (starts with ./ or ../) => use path.resolve()
 // 3. module path: use require.resolve()
-function getAbsolutePath(pathString, callerPath) {
+export function resolve(pathString, callerPath) {
+  if (callerPath === undefined) {
+    callerPath = caller();
+  }
+  
   const { dir } = path.parse(pathString);
   const isAbsolute = path.isAbsolute(pathString);
   const isRelative = !isAbsolute && String(dir).startsWith(".");

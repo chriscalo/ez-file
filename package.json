@@ -1,0 +1,31 @@
+{
+  "name": "file",
+  "version": "0.0.1",
+  "description": "No fuss utility for fetching the contents of a file.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "source": "index.js",
+  "repository": "https://github.com/chriscalo/file.git",
+  "author": "Chris Calo <chris.calo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "build": "microbundle --target=node --format=es,cjs",
+    "build:watch": "microbundle watch --target=node --format=es,cjs"
+  },
+  "dependencies": {
+    "caller": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "^2.3.0",
+    "esm": "^3.2.25",
+    "microbundle": "^0.11.0",
+    "nodemon": "^1.19.1"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  }
+}
