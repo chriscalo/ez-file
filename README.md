@@ -19,7 +19,6 @@ const { file } = require("@chriscalo/file");
 const contents1 = file("./relative/path/to/file.txt");
 const contents2 = file("/absolute/path/to/file.txt");
 const contents3 = file("module/path/to/file.txt");
-
 const contents4 = file("./path/to/file.txt", {
   // override options passed to fs.readFileSync()
   encoding: "base64", // defaults to "utf-8"
