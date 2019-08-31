@@ -1,8 +1,6 @@
 # @chriscalo/file
 No fuss utility for fetching the contents of a file.
 
-Works for relative paths, absolute paths, and module paths (inside `node_modules` folder).
-
 Installation:
 
 ``` sh
@@ -10,6 +8,8 @@ npm install @chriscalo/file
 # or
 yarn add @chriscalo/file
 ```
+
+Works for relative paths, absolute paths, and module paths (inside `node_modules` folder).
 
 Usage:
 
