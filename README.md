@@ -1,7 +1,15 @@
 # @chriscalo/file
 No fuss utility for fetching the contents of a file.
 
-Works for relative paths, absolute paths, and module paths (inside `node_modules` folder);
+Works for relative paths, absolute paths, and module paths (inside `node_modules` folder).
+
+Installation:
+
+``` sh
+npm install @chriscalo/file
+# or
+yarn add @chriscalo/file
+```
 
 Usage:
 
@@ -18,10 +26,3 @@ const contents4 = file("./path/to/file.txt", {
 });
 ```
 
-Installation:
-
-``` sh
-npm install @chriscalo/file
-# or
-yarn add @chriscalo/file
-```
