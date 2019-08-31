@@ -9,7 +9,7 @@ npm install @chriscalo/file
 yarn add @chriscalo/file
 ```
 
-Works for relative paths, absolute paths, and module paths (inside `node_modules` folder).
+Works for relative paths, absolute paths, and module paths (`node_modules` folder).
 
 Usage:
 
