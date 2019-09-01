@@ -1,6 +1,6 @@
 {
   "name": "@chriscalo/file",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "No fuss utility for fetching the contents of a file.",
   "main": "dist/index.js",
   "module": "index.js",
