@@ -4,11 +4,12 @@ var fs = _interopDefault(require('fs'));
 var path = _interopDefault(require('path'));
 var caller = _interopDefault(require('caller'));
 
-function file(filePath) {
+function file(filePath, options) {
+  if ( options === void 0 ) options = {};
+
   var absolutePath = resolve(filePath, caller());
-  return fs.readFileSync(absolutePath, {
-    encoding: "utf-8"
-  });
+  return fs.readFileSync(absolutePath, Object.assign({}, {encoding: "utf-8"},
+    options));
 }
 // 1. absolute path (starts with /) => use as is
 // 2. relative path (starts with ./ or ../) => use path.resolve()

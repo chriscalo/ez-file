@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "No fuss utility for fetching the contents of a file.",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "index.js",
   "source": "index.js",
   "repository": "https://github.com/chriscalo/file.git",
   "author": "Chris Calo <chris.calo@gmail.com>",
@@ -11,8 +11,8 @@
   "scripts": {
     "test": "ava",
     "test:watch": "ava --watch",
-    "build": "microbundle --target=node --format=es,cjs",
-    "build:watch": "microbundle watch --target=node --format=es,cjs"
+    "build": "microbundle --target=node --format=cjs",
+    "build:watch": "microbundle watch --target=node --format=cjs"
   },
   "dependencies": {
     "caller": "^1.0.1"
