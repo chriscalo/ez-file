@@ -1,6 +1,6 @@
 {
   "name": "ez-file",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "No fuss utility for fetching the contents of a file.",
   "main": "dist/index.js",
   "module": "index.js",
