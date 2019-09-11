@@ -12,7 +12,8 @@
     "test": "ava --verbose",
     "test:watch": "ava --verbose --watch",
     "build": "microbundle --target=node --format=cjs",
-    "build:watch": "microbundle watch --target=node --format=cjs"
+    "build:watch": "microbundle watch --target=node --format=cjs",
+    "dev": "run-p test:watch build:watch"
   },
   "dependencies": {
     "caller": "^1.0.1"
@@ -22,7 +23,8 @@
     "chai": "^4.2.0",
     "esm": "^3.2.25",
     "microbundle": "^0.11.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5"
   },
   "ava": {
     "require": [
