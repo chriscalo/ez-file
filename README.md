@@ -1,4 +1,7 @@
 # @chriscalo/file
+
+# DEPRECATED. See [ez-file](https://www.npmjs.com/package/ez-file)
+
 No fuss utility for fetching the contents of a file.
 
 Installation:
@@ -24,4 +27,3 @@ const contents4 = file("./path/to/file.txt", {
   encoding: "base64", // defaults to "utf-8"
 });
 ```
-
