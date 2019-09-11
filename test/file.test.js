@@ -1,10 +1,9 @@
 import test from "ava";
-import { expect } from "chai";
 
 import { file, resolve } from "../";
 
-test("reads files", t => {
+test("reads files", ({ is, truthy }) => {
   const markdownFile = file("./test.md");
-  expect(markdownFile).to.be.a("string");
-  expect(markdownFile.length > 0).to.be.true;
+  is(typeof markdownFile, "string");
+  truthy(markdownFile.length > 0);
 });
