@@ -34,7 +34,7 @@ function resolve(pathString, callerPath) {
   } else if (isModule) {
     return require.resolve(pathString);
   } else {
-    var msg = "Can't resolve absolute path for template: " + pathString;
+    var msg = "Can't resolve absolute path: " + pathString;
     throw new Error(msg);
   }
 }
