@@ -19,7 +19,7 @@
     "caller": "^1.0.1"
   },
   "devDependencies": {
-    "ava": "^2.3.0",
+    "ava": "^2.4.0",
     "esm": "^3.2.25",
     "microbundle": "^0.11.0",
     "nodemon": "^1.19.1",
