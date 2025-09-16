@@ -1,13 +1,13 @@
-# ez-file
+# @chriscalo/file
 
 No fuss utility for fetching the contents of a file.
 
 Installation:
 
 ``` sh
-npm install ez-file
+npm install @chriscalo/file
 # or
-yarn add ez-file
+yarn add @chriscalo/file
 ```
 
 Works for relative paths, absolute paths, and module paths (`node_modules` folder).
@@ -15,7 +15,7 @@ Works for relative paths, absolute paths, and module paths (`node_modules` folde
 Usage:
 
 ``` js
-const { file } = require("ez-file");
+const { file } = require("@chriscalo/file");
 
 const contents1 = file("./relative/path/to/file.txt");
 const contents2 = file("/absolute/path/to/file.txt");

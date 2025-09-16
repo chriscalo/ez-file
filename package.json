@@ -1,11 +1,11 @@
 {
-  "name": "ez-file",
+  "name": "@chriscalo/file",
   "version": "0.1.2",
   "description": "No fuss utility for fetching the contents of a file.",
   "main": "dist/index.js",
   "module": "index.js",
   "source": "index.js",
-  "repository": "https://github.com/chriscalo/ez-file.git",
+  "repository": "https://github.com/chriscalo/file.git",
   "author": "Chris Calo <chris.calo@gmail.com>",
   "license": "MIT",
   "scripts": {
